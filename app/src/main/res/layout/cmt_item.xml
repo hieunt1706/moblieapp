@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_width="1dp"
+            android:src="@drawable/account_fragment_useravatar"
+            android:id="@+id/ivCmt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/nameCmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ten"
+                android:textSize="17dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/contentCmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="content"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/createCmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12h30m"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_cmt"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/uit"
+        android:layout_margin="10dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

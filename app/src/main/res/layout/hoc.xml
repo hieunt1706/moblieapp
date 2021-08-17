@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <VideoView
+                    android:id="@+id/vv_lession"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_baseline_arrow_back_24"
+                android:id="@+id/back"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/useravatar_user_info_border"
+                >
+                <TextView
+                    android:id="@+id/Lession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên Bài Giảng"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lam bt"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/bg_btn"
+                        android:padding="10dp"
+                        android:id="@+id/btnQuest"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:text="TAI LIEU"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/Document"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="blank"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/hoidap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hoi va Dap"
+                android:background="@color/dark"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

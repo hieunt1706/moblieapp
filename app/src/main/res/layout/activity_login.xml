@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.LoginActivity"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/welcomeText"
+            app:fontFamily="@font/merriweather"
+            android:transitionName="logo_text"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="0.4in"
+            android:layout_marginLeft="20dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.3in"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/bglayout"
+            android:padding="20dp"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius"
+                android:hint="E-mail"
+                android:textColorHint="#FF787878">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TaiKhoanEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="huythai910@gmail.com"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColorHint="#FF787878"
+                android:layout_marginTop="20dp"
+                app:boxBackgroundColor="#FFFFFF"
+                app:boxStrokeColor="#000"
+                app:passwordToggleEnabled="true"
+                android:background="@drawable/radius"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/MatKhauEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1Thaiminhhuy"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/forgotPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="FORGET PASSWORD ?"
+                android:textColor="@color/txt_cl"
+                android:textSize="12dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bg_btn"
+                android:text="Sign in"
+                android:textColor="@color/colorPrimary"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEW USER? SIGN UP"
+                android:textSize="15dp"
+                android:textColor="@color/txt_cl"
+                android:id="@+id/regText"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
